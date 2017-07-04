@@ -4,7 +4,6 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "rails", "~> 5.1.2"
 # Use sqlite3 as the database for Active Record
@@ -31,32 +30,32 @@ gem "jbuilder", "~> 2.5"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem "jquery-rails", "4.3.1"
 
 group :development, :test do
-   gem "autoprefixer-rails"
+  gem "autoprefixer-rails"
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
+  gem "better_errors"
+  gem "brakeman", require: false
+  gem "bundler-audit"
   gem "capybara", "~> 2.13"
+  gem "database_cleaner"
   gem "eslint-rails"
+  gem "factory_girl_rails"
+  gem "guard-rspec", require: false
+  gem "jshint"
   gem "nokogiri"
   gem "rack", "~> 2.0.1"
-  gem "rails_best_practices"
   gem "railroady"
+  gem "rails_best_practices"
   gem "reek"
   gem "rspec"
-  gem "rspec-rails"
   gem "rspec-collection_matchers"
-  gem "factory_girl_rails"
-  gem "better_errors"
-  gem "guard-rspec", require: false
-  gem "database_cleaner"
-  gem "brakeman", require: false
-  gem "jshint"
-  gem "bundler-audit"
+  gem "rspec-rails"
   gem "rubocop", require: false
   gem "rubocop-checkstyle_formatter", require: false
-  gem "eslint-rails"
   gem "scss-lint", require: false
   gem "scss_lint_reporter_checkstyle", require: false
   gem "selenium-webdriver"
@@ -64,7 +63,6 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem "brakeman", require: false
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "web-console", ">= 3.3.0"
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
@@ -73,13 +71,13 @@ group :development do
 end
 
 group :test do
-  gem "simplecov-rcov", require: false
-  gem "simplecov-json"
-  gem "shoulda-matchers"
+  gem "guard", "2.13.0"
+  gem "guard-minitest", "2.4.4"
+  gem "minitest-reporters", "1.1.14"
   gem "rails-controller-testing", "1.0.2"
-  gem "minitest-reporters",       "1.1.14"
-  gem "guard",                    "2.13.0"
-  gem "guard-minitest",           "2.4.4"
+  gem "shoulda-matchers"
+  gem "simplecov-json"
+  gem "simplecov-rcov", require: false
 end
 
 group :production do
