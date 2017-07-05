@@ -1,0 +1,6 @@
+linters:
+  Comment:
+    exclude: "app/assets/stylesheets/application.scss"
+  StringQuotes:
+    enabled: true
+    style: double_quotes
