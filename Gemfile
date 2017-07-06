@@ -63,3 +63,6 @@ group :production do
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Added at 2017-07-06 15:10:43 +0700 by minhduc:
+gem "rails-ujs", "~> 0.1.0"
