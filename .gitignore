@@ -26,3 +26,4 @@
 /.framgia-ci-reports
 .framgia-ci-result.temp.yml
 /test/**/*
+/app/stylesheets/application.scss
