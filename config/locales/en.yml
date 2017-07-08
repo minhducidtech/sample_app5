@@ -32,7 +32,7 @@ en:
       help: "Help"
       login: "Log in"
     footer:
-      content: "The %{rort} by %{rort} "
+      content: "The %{rort} by %{rort}"
       rort: "Ruby on Rails Tutorial"
       mh: "Michael Hartl"
       about: "About"
@@ -42,6 +42,7 @@ en:
   static_pages:
     home:
       home: "Home"
+      nouser: "User does not exist"
       sample: "Welcome to the Sample App"
       this: "This is the home page for the
         %{rort} sample application."
@@ -70,4 +71,11 @@ en:
   users:
     new:
       sign: "Sign up"
-
+      hello: "Welcome to the Sample App"
+      create: "Create my account"
+      signup: "Sign up"
+      confirm: "Confirmation"
+  shared:
+    error_messages:
+      contains: "The form contains %{count_errors}"
+      error: "error"
