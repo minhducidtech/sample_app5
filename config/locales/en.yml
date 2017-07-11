@@ -59,6 +59,7 @@ en:
       create: "Create my account"
       signup: "Sign up"
       confirm: "Confirmation"
+      remember_me: "Remmember Me"
   sessions:
     new:
       login: "Login"
