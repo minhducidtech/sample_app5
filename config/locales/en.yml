@@ -11,7 +11,7 @@ en:
       help: "Help"
       login: "Log in"
       users: "Users"
-      sampleapp: "Sample app"
+      sample_app: "Sample app"
       acount: "Account"
       profile: "Profile"
       settings: "Settings"
@@ -31,7 +31,7 @@ en:
       this: "This is the home page for the
         %{rort} sample application."
       rort: "Ruby on Rails Tutorial"
-      railslogo: "Rails logo"
+      rails_logo: "Rails logo"
     about:
       about: "About"
       this: "The %{rort} is a %{book} and %{screencast}
@@ -53,20 +53,43 @@ en:
         about the sample app at the %{cp}."
       cp: "Contact page"
   users:
+    show:
+      not_found: "Not found"
+    user:
+      delete: "Delete"
+      sure: "You sure?"
+    index:
+      all_users: "All users"
+      not_found: "Not found"
     new:
       sign: "Sign up"
       hello: "Welcome to the Sample App"
       create: "Create my account"
-      signup: "Sign up"
+      sign_up: "Sign up"
       confirm: "Confirmation"
       remember_me: "Remmember Me"
+    create:
+      hello: "Hello"
+    edit:
+      change: "Change"
+      edit_user: "Edit user"
+      update_your_profile: "Update your profile"
+      save_change: "Save changes"
+      please_login: "Please log in"
+      confirmation: "Confirmation"
+    update:
+      profile_update: "Profile update"
+      please_login: "Please log in"
+      user_delete: "User delete"
+    destroy:
+      user_delete: "Deleted"
   sessions:
     new:
       login: "Login"
-      signup: "Sign up now!"
+      sign_up: "Sign up now!"
       new_user: "New User ?"
     create:
-      invalidemailpass: "Invalid email/password combination"
+      invalid_email_pass: "Invalid email/password combination"
   shared:
     error_messages:
       contains: "The form contains %{count_errors}"
